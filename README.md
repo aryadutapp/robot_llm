@@ -43,3 +43,23 @@ Choose appropriate commands based on the task requirements.
 4. If you want the robot to move to the left or right of an object, first move the robot to the coordinates of that object using "move_to", then use the "move" command with the appropriate direction.
 
 ```
+
+## Dataset
+
+Untuk dataset akan dibagi mejadi 4 kategori
+
+* Direct Command Calling: In this scenario, the user directly calls commands without any intermediate reasoning. Each action is performed based solely on the user's explicit instructions.
+* Chain of Command: Here, the user provides a sequence of commands, and each subsequent command is based on the outcome of the previous one. This involves chaining actions together based on the robot's state and the user's goals.
+* Reasoning: The robot uses reasoning to determine the best sequence of actions to achieve the user's goal. This involves analyzing the current state, understanding the task constraints, and planning a series of actions accordingly.
+* Impossible Task Handling: If the user's goal is unattainable or conflicts with the task constraints, the system should recognize this and return error response.
+
+## Format Training Dataset
+Untuk format dataset untuk training rencana akan seperti berikut
+
+```
+template = "Instruction:\n{context}\n{user_goal}\n\nResponse:\n{response}"
+
+```
+
+
+
