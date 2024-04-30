@@ -2,6 +2,8 @@
 
 Tujuan dari proyek ini adalah untuk mengimplementasikan LLM sebagai kontrol untuk robot arm (dobot magician).
 
+![Alt text](./llm_bot.png)
+
 ## Context Prompt
 
 Context prompt adalah prompt yang diberikan untuk memberikan informasi mengenai keadaan nyata robot (grounding reality). Hal ini diperlukan karena untuk mengontrol robot. LLM harus mengetahui kondisi nyata robot saat itu meliputi lingkungan sekita dan hal apa saja yang dapat dilakukan robot. Dalam konteks ini, informasi yang akan diberikan meliputi koordinat objek yang akan dimanipulasi serta fungsi high level yang digunakan untuk mengontrol robot (seperti gerakMaju()).
